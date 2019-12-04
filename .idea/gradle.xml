@@ -11,6 +11,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/database" />
             <option value="$PROJECT_DIR$/email" />
+            <option value="$PROJECT_DIR$/font" />
+            <option value="$PROJECT_DIR$/imageloader" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
