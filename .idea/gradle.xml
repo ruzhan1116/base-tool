@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/email" />
             <option value="$PROJECT_DIR$/font" />
             <option value="$PROJECT_DIR$/imageloader" />
+            <option value="$PROJECT_DIR$/json-filter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
