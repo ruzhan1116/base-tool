@@ -4,10 +4,10 @@ import javax.mail.Authenticator
 import javax.mail.PasswordAuthentication
 
 
-class MyAuthenticator(username: String, password: String) : Authenticator() {
-
-    private var userName: String? = username
-    private var password: String? = password
+class MailAuthenticator(
+    private val userName: String,
+    private val password: String
+) : Authenticator() {
 
     override fun getPasswordAuthentication(): PasswordAuthentication {
         return PasswordAuthentication(userName, password)

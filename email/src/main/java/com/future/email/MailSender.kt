@@ -22,11 +22,11 @@ class MailSender {
         @JvmStatic
         fun sendHtmlMail(mailInfo: MailInfo): Boolean {
             // 判断是否需要身份认证
-            var authenticator: MyAuthenticator? = null
+            var authenticator: MailAuthenticator? = null
             val pro = mailInfo.properties
             // 如果需要身份认证，则创建一个密码验证器
             if (mailInfo.isValidate) {
-                authenticator = MyAuthenticator(mailInfo.userName!!, mailInfo.password!!)
+                authenticator = MailAuthenticator(mailInfo.userName!!, mailInfo.password!!)
             }
             // 根据邮件会话属性和密码验证器构造一个发送邮件的session
             val sendMailSession = Session.getDefaultInstance(pro, authenticator)
@@ -82,11 +82,11 @@ class MailSender {
 
     fun sendTextMail(mailInfo: MailInfo): Boolean {
         // 判断是否需要身份认证
-        var authenticator: MyAuthenticator? = null
+        var authenticator: MailAuthenticator? = null
         val pro = mailInfo.properties
         if (mailInfo.isValidate) {
             // 如果需要身份认证，则创建一个密码验证器
-            authenticator = MyAuthenticator(mailInfo.userName!!, mailInfo.password!!)
+            authenticator = MailAuthenticator(mailInfo.userName!!, mailInfo.password!!)
         }
         // 根据邮件会话属性和密码验证器构造一个发送邮件的session
         val sendMailSession = Session.getDefaultInstance(pro, authenticator)
