@@ -1,2 +1,2 @@
 include ':app', ':json-filter', 'database', 'email', 'font', 'imageloader'
-rootProject.name='freelancer'
+rootProject.name='base-tool'
