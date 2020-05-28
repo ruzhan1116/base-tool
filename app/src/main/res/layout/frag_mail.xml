@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_marginTop="22dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mailFromAddressEt"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:hint="mailFromAddress"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mailFromPwdEt"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:hint="mailFromPwd"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mailToAddressEt"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:hint="mailToAddress"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/mailContentEt"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:hint="mailContent"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:gravity="left|top"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sendMailBtn"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"
+            android:text="send"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

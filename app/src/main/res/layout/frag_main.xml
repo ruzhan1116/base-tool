@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/mailBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:text="mail"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/imageLoaderBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:text="imageLoader"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fontBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:text="font"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:textSize="22dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.core.widget.NestedScrollView>

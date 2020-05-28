@@ -24,7 +24,7 @@ data class MailModel(
         private const val FALSE = "false"
     }
 
-    fun init() {
+    fun initProperty() {
         properties.setProperty(MAIL_SMTP_HOST, mailServerHost)
         properties.setProperty(MAIL_SMTP_PORT, mailServerPort)
         properties.setProperty(MAIL_SMTP_AUTH, if (isValidate) TRUE else FALSE)

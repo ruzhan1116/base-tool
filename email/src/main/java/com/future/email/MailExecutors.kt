@@ -9,6 +9,7 @@ class MailExecutors {
     companion object {
         private const val THREAD_COUNT = 2
 
+        @Volatile
         private var INSTANCE: MailExecutors? = null
 
         @JvmStatic
@@ -28,6 +29,7 @@ class MailExecutors {
         override fun newThread(r: Runnable): Thread {
             val thread = Thread(r)
             thread.name = String.format(THREAD_NAME_STEM, mThreadId.getAndIncrement())
+            thread.priority = Thread.MIN_PRIORITY
             return thread
         }
     })
