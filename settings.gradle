@@ -1,2 +1,3 @@
+include ':socket'
 include ':app', ':json-filter', 'database', 'email', 'font', 'imageloader'
 rootProject.name='base-tool'

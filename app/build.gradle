@@ -45,4 +45,5 @@ dependencies {
     implementation project(':email')
     implementation project(':font')
     implementation project(':imageloader')
+    implementation project(':socket')
 }
